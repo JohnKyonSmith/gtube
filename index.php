@@ -14,7 +14,7 @@
 
 
 	<body>
-		<header><a href="http://gtube.bbf.lt/">gTube</a>	
+		<header><a href="http://gtube.muhprivacy.com/">gTube</a>	
 			<form id="search">
 				<input id="searchbar" type="text" name="Keyword" autofocus/>
 				<input id="searchb" type="submit" value="Search" />
