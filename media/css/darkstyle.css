@@ -1,0 +1,45 @@
+/* 1em = 20px; */
+
+*{margin:0;padding:0;font-family: "Segoe UI", Frutiger, "Frutiger Linotype", sans-serif;color:#eee;}
+body{background: url('http://tox.vacau.com/index_files/greyback.png');min-width:720px;}
+input[type=submit]{display:block;width:50px;height:30px;color:#eee;background:#333;border:1px solid #33a1de;}
+
+footer{position:relative;bottom:0;padding:.25em;}
+footer button{color:#000;}
+header{position:fixed;z-index:30000;top:0;width:100%;height:1.5em;background:#333;box-shadow: 0 8px 6px -6px black;padding-left:10px;font-size:2.25em;line-height:50px;}
+#search *{position:fixed;top:10px;height:30px;color:#000;}
+#searchbar{right:70px;width:25%;min-width:200px;border:1px solid #33a1de;}
+#searchb{right:10px;color:#eee;}
+
+#wrapper{margin-top:50px;width:100%;position:relative;}
+
+#title{font-size:50px;padding-left:50px;text-align:center;}
+#videocont{width:100%;background:rgba(0,0,0,.25);margin:.5em 0 0 0;}
+#video{display:block;margin:0 auto;background:#000;min-width:640px;}
+
+#desc{padding:.5em 1em;text-indent:1em;display:block;width:50%;margin:.5em auto;background:rgba(0,0,0,.25);}
+#desc p{display:inline-block;position:relative;}
+#desc #uploaded{padding:0 2.25em;}
+#desc a{color:#33a1de;text-decoration:none;}
+
+#tools{padding:0;position:relative;display:block;text-align:right;}
+#tools input{margin:5px 0;width:75px;display:inline-block;}
+
+#comments{padding:1em;display:block;width:50%;margin:.5em auto;background:rgba(0,0,0,.25);}
+.comment{text-indent:1em;margin:.25em 0;padding:.5em;background:rgba(0,0,0,.25);}
+.comment .user{font-style:italic; text-indent:1.5em;font-size:.75em;}
+
+a{text-decoration:none;}
+
+/* Start of Home CSS */
+
+#pageTitle{text-align: center; color: #FFF; font-size: 23px; margin-top: 90px;}
+
+#videos{margin: auto; position: relative; width: 1000px; margin-top: 110px;}
+#videos li{display: inline-block; margin: 10px;}
+#videos li a{ text-decoration: none; }
+#videos li a:hover{text-decoration: underline;}
+#videos li .videoTitle{color: #fff;}
+#videos li .videoThumb{width: 141px; height: 100px; background: #fff;}
+
+/* End of Home CSS */

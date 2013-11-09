@@ -2,7 +2,7 @@ gTube
 
 Github: https://github.com/Shinis/gtube
 
-Website: http://gtube.bbf.lt
+Website: http://gtube.muhprivacy.com/
 
 gTube is the working name of a youtube replacement with a few differences. Uploading will be done
 through accounts with an option to post anon. Comments will be done the same way with anon as
