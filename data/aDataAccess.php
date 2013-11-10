@@ -30,13 +30,13 @@ abstract class aDataAccess
 
     public abstract function selectByUserName($userName);
 
-    public abstract function updateWebUser($webUserID, $userName, $pass);
+    public abstract function login($userName, $pass, $privateSalt);
 
     public abstract function insertWebUser($userName, $pass, $privateSalt, $token);
 
-    public abstract function fetchPrivateSalt($row);
-
-    public abstract function login($userName, $pass, $privateSalt);
+    public abstract function updateWebUser($webUserID, $userName, $pass);
 
     public abstract function fetchWebUserID($row);
+
+    public abstract function fetchPrivateSalt($row);
 }

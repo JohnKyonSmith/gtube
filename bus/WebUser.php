@@ -123,6 +123,7 @@ require("./data/aDataAccess.php");
             $newID = NULL;
 
             if($this->webUserID)
+                // TODO: Implement updateWebUser() method.
                 $numRows = $myDataAccess->updateWebUser($this->webUserID, $this->userName, $this->pass);
             else
                 $newID =  $myDataAccess->insertWebUser($this->userName, $this->pass, $this->privateSalt, $this->token);

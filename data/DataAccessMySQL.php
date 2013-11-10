@@ -133,9 +133,6 @@ class DataAccessMySQL extends aDataAccess
         // TODO: Implement updateWebUser() method.
     }
 
-
-    // ROW ACCESS
-
     public function fetchPrivateSalt($row)
     {
        return $row['privateSalt'];
@@ -150,7 +147,6 @@ class DataAccessMySQL extends aDataAccess
     {
         return $row['token'];
     }
-
 
     // SANITIZER
 
