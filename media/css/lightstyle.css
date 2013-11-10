@@ -181,6 +181,13 @@ input[type=submit]:focus{
 	background: #333;
 }
 
+#stylechanger {
+	right: 18px;
+	top: -17px;
+	position: relative;
+	float: right;
+}
+
 /* Start of Home CSS */
 
 #pageTitle {
