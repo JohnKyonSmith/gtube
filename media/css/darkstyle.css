@@ -31,6 +31,10 @@ header{position:fixed;z-index:30000;top:0;width:100%;height:1.5em;background:#33
 
 a{text-decoration:none;}
 
+footer {
+    text-align:center;
+}
+
 /* Start of Home CSS */
 
 #pageTitle{text-align: center; color: #FFF; font-size: 23px; margin-top: 90px;}
