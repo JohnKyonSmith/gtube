@@ -42,8 +42,8 @@
 	    </ul>
         </div>
         <br>
-        <footer>
+        <div id="footer">
             Created for your freedoms.
-        </footer>
+        </div>
     </body>
 </html>

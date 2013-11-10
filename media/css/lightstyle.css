@@ -1,196 +1,220 @@
 /* gTube Theme: Lightness */
 /* Author: Darksrc */
-/* Thief: Comrade/*
-/* Version: 1.0.2.5 (9/11/13) */
+/* Thief: Comrade */
+/* Version: 1.0.3 (10/11/13) */
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", sans-serif;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Frutiger, "Frutiger Linotype", sans-serif;
 }
 
-a { 
-	text-decoration: none;
+a {
+        text-decoration: none;
+}
+
+html {	height:100%;
+
 }
 
 body {
-	background: url('http://i.imgur.com/zjC8hU7.png') repeat scroll 0% 0% transparent;
+        background: url('../images/lightgreyback.png') repeat scroll 0% 0% transparent;
+	height:100%;
+	min-height:100%;
+	padding-bottom:28px;
 }
 
 header {
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	height: 40px;
-	z-index: 9001;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-	background-image:-moz-linear-gradient(center top , rgb(51, 51, 51), rgb(34, 34, 34));
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 46px;
+        z-index: 9001;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        background:#333;
 }
 
 header a {
-	font-size: 1.5em;
-	padding: 10px;
-	color: white;
+        font-size: 26px;
+        padding: 10px;
+        color: white;
 }
 
+
 #search * {
-	position: fixed;
-	top: 6px;
-	-moz-transition: .5s;
-	-webkit-transition: .5s;
-	background-color: white;
+        position: fixed;
+        top: 9px;
+	height:24px;
+	color:#000;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        background-color: white;
 }
 
 #searchbar {
-	right: 88px;
-	width: 20%;
-	min-width: 200px;
-	cursor: text;
-	border: 1px solid grey;
-	border-right: none;
-	border-radius: 5px;
-	padding: 2px 5px;
+        right: 96px;
+        width: 20%;
+        min-width: 200px;
+        cursor: text;
+        border: 1px solid #33a1de;
+        border-right: none;
+        padding: 2px 5px;
 }
 #searchbar:hover{ border: 1px solid silver;}
 
 #searchb {
-	padding: 1px 10px;
-	width: 80px;
-	right: 10px;
-	border-left: none;
-}	
+        padding: 1px 10px;
+        width: 80px;
+	top:11px;
+        right: 10px;
+        border-left: none;
+}        
 
-input[type=submit] {
-	cursor: pointer;
-	-moz-transition: .5s;
-	-webkit-transition: .5s;
-	border: 1px solid grey;
-	border-radius: 5px;
-	display:inline-block;
-	color: grey;
+input[type=submit]{
+	display:block;
+	width:50px;
+	height:30px;
+	color:#eee;
+	background:#333;
+	border:1px solid #33a1de;
+
+
 }
-input[type=submit]:hover{ border: 1px solid silver; color: silver; }
-input[type=submit]:focus{ border: 1px solid silver; color: silver; }
+
+input[type=submit]:hover{
+	border: 1px solid silver;
+	color: silver; 
+}
+
+input[type=submit]:focus{
+	border: 1px solid silver;
+	 color: silver;
+}
 
 #wrapper {
-	margin-top: 50px;
-	width: 100%;
-	position: relative;
+        margin-top: 50px;
+        width: 100%;
+	height:100%;
+	min-height: 100%;
+        position: relative;
 }
 
 #title {
-	position: relative;
-	padding-top: 8px;
-	padding-bottom: 20px;
-	color: black;
-	font-size: 1.5em;
-	text-align: center;
+        position: relative;
+        padding-top: 8px;
+        padding-bottom: 20px;
+        color: black;
+        font-size: 1.5em;
+        text-align: center;
 }
 
 #video {
-	width: 960px;
-	height: 480px;
-	background: black;
+        width: 960px;
+        height: 480px;
+        background: black;
 }
 
 #desc {
-	color: grey;
-	padding: 20px;
-	padding-top: 10px;
-	padding-bottom: 0;
-	width: 50%;
-	min-width: 920px;
-	margin: 0px auto;
-	background: url('http://i.imgur.com/BfRevnl.png') repeat scroll 0% 0% transparent;
-	border-top: 1px dashed;
-	border-color: silver;
+        color: lightgray;
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        width: 920px;
+        min-width: 920px;
+        margin: 0px auto;
+        background:rgba(0,0,0,.4);
+        border-top: 1px dashed;
+        border-color: silver;
 }
 
 #desc #uploaded {
-	color: white;
+        color: white;
 }
 #desc a {
-	color: silver; 
-	text-decoration:none;
+        color: lightcyan;
+        text-decoration:none;
 }
 
-#tools{ 
-	padding-top: 10px;
-	position: relative;
-	display: block;
-	text-align: right;
+#tools{
+        padding-top: 10px;
+        position: relative;
+        display: block;
+        text-align: right;
 }
 #tools input {
-	margin: 10px 0;
-	width: 75px;
-	display: inline-block;
+        margin: 10px 0;
+        width: 75px;
+        display: inline-block;
 }
 
 #comments {
-	padding: 20px;
-	display: block;
-	width: 50%;
-	min-width: 920px;
-	margin: .5em auto;
-	background: url('http://i.imgur.com/BfRevnl.png') repeat scroll 0% 0% transparent;
+        padding: 20px;
+        display: block;
+        width: 920px;
+        min-width: 920px;
+        margin: .5em auto;
+        background:rgba(0,0,0,.4);
 }
-.comment { 
-	color: grey;
-	text-indent: 1em;
-	margin: .25em 0;
-	padding: .5em;
-	background: rgba(0,0,0,.25);
+.comment {
+        color: lightgray;
+        text-indent: 1em;
+        margin: .25em 0;
+        padding: .5em;
+        background: rgba(0,0,0,.4);
 }
 .comment .user{
-	color: white;
-	font-style:italic; 
-	text-indent:1.5em;
-	font-size:.75em;
+        color: white;
+        font-style:italic;
+        text-indent:1.5em;
+        font-size:.75em;
 }
 
-footer { 
-	position: relative;
-	bottom: 0px;
-	padding: .25em;
-}
-footer button { 
-	color: #000;
+#foot  {
+	color:white;
+	position:relative;
+	height:30px;
+  	width:100%;
+	padding-top:6px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:5px;
+	background: #333;
 }
 
 /* Start of Home CSS */
 
 #pageTitle {
-	text-align: center; 
-	color: black; 
-	font-size: 23px; 
-	margin-top: 50px;
+        text-align: center;
+        color: black;
+        font-size: 23px;
+        margin-top: 50px;
 }
 
 #videos {
-	margin: auto; 
-	position: relative; 
-	width: 80%;
-	margin-top: 0px;
+        margin: auto;
+        position: relative;
+        width: 80%;
+        margin-top: 0px;
 }
 #videos li {
-	display: inline-block; 
-	margin: 10px;
+        display: inline-block;
+        margin: 10px;
 }
-#videos li a { 
-	color: grey;
-	-moz-transition: .5s;
-	-webkit-transition: .5s;
+#videos li a {
+        color: grey;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
 }
-#videos li a:hover { 
-	color: silver;
+#videos li a:hover {
+        color: silver;
 }
 
 #videos li .videoThumb {
-	width: 141px; 
-	height: 100px; 
-	background: white;
-	border: 1px dashed;
-	border-color: grey;
+        width: 141px;
+        height: 100px;
+        background: white;
+        border: 1px dashed;
+        border-color: grey;
 }
 
 /* End of Home CSS */
