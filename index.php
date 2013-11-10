@@ -1,7 +1,3 @@
-<?php
-require_once("./bus/WebUser.php");
-session_start();
-?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -20,14 +16,6 @@ session_start();
     <body>
 	<header>
             <a href="http://gtube.muhprivacy.com/">gTube</a>
-            <?php
-                if(!empty($_SESSION['loginUser']))
-                {
-                    $loginUser = unserialize($_SESSION['loginUser']);
-                    echo '<a id="header-login" href="logout.php" >Log out ' . $loginUser->getUserName() . '</a>';
-                }
-                else echo '<a id="header-login" href="login.php" >Log in</a>';
-            ?>
 	    <form id="search">
 	        <input id="searchbar" type="text" name="Keyword" autofocus/>
 	        <input id="searchb" type="submit" value="Search" />
