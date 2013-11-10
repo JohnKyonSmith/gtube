@@ -1,1 +1,3 @@
 .*.swp
+./sec/dict_words.txt
+./sec/newBaseSalt.php
