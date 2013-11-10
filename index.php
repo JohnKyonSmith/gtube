@@ -16,10 +16,6 @@
     <body>
 	<header>
             <a href="http://gtube.muhprivacy.com/">gTube</a>
-            <form enctype="multipart/form-data" action="upload.php" method="post">
-                <input name="vidfile" id="vidfile" type="file" />
-                <input type="submit" value="Upload" name="submit" id="submit" />
-            </form>
 	    <form id="search">
 	        <input id="searchbar" type="text" name="Keyword" autofocus/>
 	        <input id="searchb" type="submit" value="Search" />
@@ -41,6 +37,10 @@
                 ?>
 	    </ul>
         </div>
+        <form enctype="multipart/form-data" action="upload.php" method="post">
+            <input name="vidfile" id="vidfile" type="file" />
+            <input type="submit" value="Upload" name="submit" id="submit" />
+        </form>
         <br>
         <div id="footer">
             Created for your freedoms.
