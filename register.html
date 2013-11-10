@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register New User</title>
+    <link rel="stylesheet" type="text/css" href="media/css/darkstyle.css" />
+    <script type="text/javascript" src="validateNewUser.js" ></script>
+</head>
+<body>
+<h2>Register New User</h2>
+<br />
+<a href="login.html">Login</a>
+<br />
+<form id="registerForm" name="registerForm" method="post" action="register.php" onsubmit="return(validateNewUser());" >
+
+    <label >(Unique) User Name: </label>
+    <input class="input-styled" id="userName" name="userName" type="text" />
+    <br />
+
+    <label >Password: </label>
+    <input class="input-styled" id="pass" name="pass" type="text" />
+    <br />
+
+    <label >Password (Again): </label>
+    <input class="input-styled" id="passAgain" name="passAgain" type="text" />
+    <br />
+
+    <input id="submit" name="submit" type="submit" value="Register" />
+</form>
+<div id="errorWrap">
+    <span id="errorMsg">
+
+    </span>
+</div>
+</body>
+</html>
