@@ -40,6 +40,11 @@ header a {
         color: white;
 }
 
+header a#header-login {
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
 
 #search * {
         position: fixed;

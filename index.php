@@ -16,6 +16,7 @@
     <body>
 	<header>
             <a href="http://gtube.muhprivacy.com/">gTube</a>
+            <a id="header-login" href="login.html">Log in</a>
 	    <form id="search">
 	        <input id="searchbar" type="text" name="Keyword" autofocus/>
 	        <input id="searchb" type="submit" value="Search" />
