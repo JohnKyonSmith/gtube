@@ -15,7 +15,11 @@
 
     <body>
 	<header>
-            <a href="http://gtube.muhprivacy.com/">gTube</a>	
+            <a href="http://gtube.muhprivacy.com/">gTube</a>
+            <form enctype="multipart/form-data" action="upload.php" method="post">
+                <input name="vidfile" id="vidfile" type="file" />
+                <input type="submit" value="Upload" name="submit" id="submit" />
+            </form>
 	    <form id="search">
 	        <input id="searchbar" type="text" name="Keyword" autofocus/>
 	        <input id="searchb" type="submit" value="Search" />
@@ -26,7 +30,7 @@
 	    <ul id="videos">
 		<?php
                     foreach (glob("video/*.webm") as $file) {
-                        $id = preg_match('@/.*\.@', $file);
+                        $id = preg_replace('/video\//', "", preg_replace('/\.webm/', "", $file));
 		        echo "<li>\n";
 		        echo "\t<a href=\"video.php?id=$id\">\n";
 			echo "\t\t<img src='video/previews/$id.png' class='videoThumb'>\n";
