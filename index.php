@@ -22,21 +22,56 @@
 	    </form>
 	</header>
 	<div id="wrapper">
-	    <div id="pageTitle">Newest Videos</div>
-	    <ul id="videos">
-		<?php
-                    foreach (glob("video/*.webm") as $file) {
-                        $id = preg_replace('/video\//', "", preg_replace('/\.webm/', "", $file));
-		        echo "<li>\n";
-		        echo "\t<a href=\"video.php?id=$id\">\n";
-			echo "\t\t<img src='video/previews/$id.png' class='videoThumb'>\n";
-			echo "\t\t<div class=\"videoTitle\">$id</div>\n";
-		        echo "\t</a>\n";
-		        echo "</li>\n";
-		    }
-                ?>
-	    </ul>
-        </div>
+		<div class="section">
+			<div class="secTitle">Newest Videos</div>
+				<ul class="videos">
+				<?php
+							foreach (glob("video/*.webm") as $file) {
+								$id = preg_replace('/video\//', "", preg_replace('/\.webm/', "", $file));
+						echo "<li>\n";
+						echo "\t<a href=\"video.php?id=$id\">\n";
+					echo "\t<img src='video/previews/$id.png' class='videoThumb'>";
+					echo "<div class=\"videoTitle\">$id</div>\n";
+						echo "\t</a>\n";
+						echo "</li>\n";
+					}
+						?>
+				</ul>
+			</div>
+			<div class="section">
+			<div class="secTitle">Top Videos</div>
+				<ul class="videos">
+				<?php
+							foreach (glob("video/*.webm") as $file) {
+								$id = preg_replace('/video\//', "", preg_replace('/\.webm/', "", $file));
+						echo "<li>\n";
+						echo "\t<a href=\"video.php?id=$id\">\n";
+					echo "\t<img src='video/previews/$id.png' class='videoThumb'>";
+					echo "<div class=\"videoTitle\">$id</div>\n";
+						echo "\t</a>\n";
+						echo "</li>\n";
+					}
+						?>
+				</ul>
+			</div>
+		<div class="section">
+			<div class="secTitle">Videos Being Watched</div>
+				<ul class="videos">
+				<?php
+							foreach (glob("video/*.webm") as $file) {
+								$id = preg_replace('/video\//', "", preg_replace('/\.webm/', "", $file));
+						echo "<li>\n";
+						echo "\t<a href=\"video.php?id=$id\">\n";
+					echo "\t<img src='video/previews/$id.png' class='videoThumb'>";
+					echo "<div class=\"videoTitle\">$id</div>\n";
+						echo "\t</a>\n";
+						echo "</li>\n";
+					}
+						?>
+				</ul>
+			</div>
+	</div>
+		
         <form enctype="multipart/form-data" action="upload.php" method="post">
             <input name="vidfile" id="vidfile" type="file" />
             <input type="submit" value="Upload" name="submit" id="submit" />
